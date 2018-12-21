@@ -1,0 +1,373 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Montserrat', sans-serif;
+box-sizing: border-box;
+}
+
+html{
+    background: url(img/book.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    box-shadow: 0px 1px 1px 0px #009ee0;
+    z-index: 1;
+    background: #ffffff;
+    top: 0;
+}
+
+.wname img{
+    height: 40px;
+    margin: 10px 10px 10px 20px;
+ }
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3%;
+}
+nav{
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    color:  #009ee0;
+    transition: .3s;
+
+}
+
+nav a:nth-child(4), p .sign{
+    text-decoration: none;
+    padding: 5px 10px;
+    color:#009ee0;
+    border-radius: 30px;
+    border:2px solid #009ee0;
+    transition: 0.3s;
+    position: relative;
+
+}
+nav a:nth-child(4):hover , p .sign:hover{
+    background: #009ee0;
+    color: #ffffff;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu:not(:last-child):hover::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    border-bottom: 2px solid #009ee0;
+    border-radius:2px;
+    animation: under 0.3s linear forwards;
+}
+
+@keyframes under{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.menu:hover{
+    animation: fade 0.3s linear forwards;
+}
+
+@keyframes fade{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+.wrap{
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items:center;
+padding: 15px;
+}
+
+.container{
+height:auto;
+width:330px;
+border-radius:4px;
+background: #fff;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+padding: 10px 0 15px;
+margin-top: 40px;
+}
+
+.login,.signup{
+text-align: center;
+width:100%;
+display:inline-block;
+font-size:30px;
+margin:20px 0 30px 0;
+text-shadow:0 3px 3px rgba(0,0,0,0.4);
+}
+
+.signup{
+    margin: 10px;
+}
+
+.username,.password,.fullname,.email{
+width:80%;
+margin:20px auto;
+color:#adadad;
+position: relative;
+}
+
+
+.name{
+display:block;
+margin-bottom: 5px;
+font-size: 20px;
+}
+
+.alertContain{
+    position: relative;
+    display: none;
+    z-index: 2;
+}
+
+.alert{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.alert::before{
+    content: "\f0c8";
+    font-family: 'FontAwesome';
+    color: #c80000;
+    font-size: 16px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.alert ul{
+    list-style: none;
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    background: #c80000;
+    border-radius: 5px;
+    width: 120%;
+}
+
+.alert ul li{
+    list-style: disc;
+    padding: 5px;
+    color: #fff;
+}
+
+.alert ul li:not(:first-child){
+    margin-left: 30px;
+}
+
+
+input{
+display:inline-block;
+border:none;
+outline:none;
+margin:10px 0 15px 10px;
+font-size: 16px;
+}
+
+input:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+.new{
+    color: #000000;
+    font-size: 15px;
+}
+
+.logbut,.sigbut{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sigbut{
+    margin: 20px 0;
+}
+
+.logbut button, .sigbut button{
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 4px 15px;
+    font-size: 20px;
+    border-radius: 30px;
+    color:#009ee0;
+    border:2px solid #009ee0;
+    transition: 0.3s;
+}
+
+
+
+.logbut button:hover,.sigbut button:hover{
+    background: #009ee0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.for{
+    position: relative;
+    text-align: center;
+    top: -20px;
+
+}
+
+.for a{
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.bottom{
+    display: block;
+    background:#adadad;
+    width: 100%;
+    height: 2px;
+    position: relative;
+    border-radius: 40px;
+}
+
+.bottom::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    background:#000000;
+    width: 0%;
+    height: 2px;
+    border-radius: 40px;
+    transition: 0.4s linear;
+    transform-style: preserve-3d;
+}
+
+input:focus + .bottom::after{
+    width: 100%;
+}
+
+input::placeholder{
+    color: #adadad;
+    font-size: 15px;
+}
+
+
+.err{
+    color: #c80000;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+    opacity: 0;
+    }
+
+    .open{
+      display: none;
+    }
+
+    @media screen and (max-width:700px){
+      .navbar{
+        display: none;
+      }
+      .open{
+        display:inline-block;
+        top: 0;
+        font-size: 30px;
+        margin:auto 10px auto 30px;
+      }
+      .open a{
+        color:#111;
+        cursor:pointer;
+      }
+    .side-nav{
+        width: 0;
+      }
+    }
+
+
+    @media screen and (max-width:400px){
+           .container{
+                   width:100%;
+           }
+
+           input{
+                   width:85%;
+                   margin:5px 0 5px 5px;
+                   font-size: 14px;
+           }
+    .login,.signup{
+   font-size:25px;
+   margin:0px 0 0px 0;
+   }
+   input::placeholder{
+       font-size: 11px;
+   }
+
+   .name{
+   margin-bottom: 5px;
+   font-size: 16px;
+   }
+
+   .logbut,.sigbut{
+       margin: 10px 0;
+   }
+
+
+   .logbut button, .sigbut button{
+       padding: 2px 7px;
+       font-size: 13px;
+   }
+
+   .err{
+       font-size: 11px;
+       }
+
+   .for{
+       position: relative;
+       text-align: center;
+       top: 0px;
+
+   }
+
+   .for a{
+       font-size: 12px;
+
+   }
+
+   .new{
+       width:100%;
+       margin:10px auto;
+       padding:0 10px;
+   }
+
+
+
+   }

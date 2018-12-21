@@ -1,0 +1,268 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+.contain{
+  width: 100%;
+  position: relative;
+  padding-top: 65px;
+}
+
+.main{
+
+  width: 75%;
+  height: auto;
+  position: relative;
+  margin: 10px auto;
+  display: flex;
+}
+
+.cover{
+width: 250px;
+
+}
+
+.cover .card{
+  width: auto;
+  position: relative;
+  margin:10px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  text-align: center;
+  padding-bottom: 13px;
+  background: #fff;
+}
+
+.cover .card img{
+  width: 160px;
+  height: 160px;
+  margin: 20px 20px;
+  border-radius: 50%;
+
+}
+
+.cover .card span{
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.cover .card .value{
+  font-size:18px;
+  overflow-wrap: break-word;
+  margin:3px 5px 12px;
+  font-weight:bold;
+}
+
+.update{
+  width: inherit;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  margin:10px 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.update .profileMenu{
+  display: flex;
+  margin: 10px 10px;
+}
+
+.update .profileMenu div{
+  margin: 0 10px;
+  padding: 5px 10px;
+  background: #dcdde1;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 7px;
+}
+
+.userQ{
+  background: #f5f6f5;
+}
+
+.update .value{
+  position: relative;
+  margin: 4px 10px 15px;
+}
+
+.edit{
+  margin: 8px 0 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cancel,.cancel1{
+  display: none;
+  margin: 0 20px;
+}
+
+.cancel a,.cancel1 a{
+  text-decoration: none;
+  color: #000;
+}
+
+input:disabled{
+  background: #fff;
+}
+
+.information{
+  margin: 10px 20px;
+  padding: 10px;
+}
+
+.password{
+cursor: pointer;
+margin:8px 0 10px 10px;
+color: blue;
+display: inline-block;
+}
+
+
+
+.pwd{
+  opacity: 0;
+}
+
+.update .value input{
+  padding: 5px 10px;
+  outline:none;
+  border:none;
+  width:300px;
+  font-size: 18px;
+}
+.updbtn{
+  width: 100%;
+display: none;
+
+}
+
+.updbtn button{
+  margin: 0 auto;
+  background: #009ee0;
+  color:#fff;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+select{
+  background: transparent;
+   border: none;
+   font-size: 18px;
+   padding: 5px 10px; /* If you add too much padding here, the options won't show in IE */
+   width:auto;
+   border: 1px solid #ccc;
+}
+option{
+  padding: 5px 10px;
+}
+
+.normal{
+  width: 100%;
+
+}
+
+.normalerr{
+  text-align: center;
+  position: relative;
+  display: none;
+  color: red;
+  margin: 0 auto;
+}
+
+.yourQuestions{
+  display: none;
+  margin: 10px 20px;
+  padding: 10px;
+}
+
+.tagname{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  margin:10px 0;
+}
+
+@media screen and (max-width:750px){
+
+.main{
+  width:90%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+}
+
+
+@media screen and (max-width:450px){
+  .main{
+  width: 95%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center
+}
+
+.cover{
+width: 200px;
+
+}
+
+
+.cover .card img{
+  width: 140px;
+  height: 140px;
+  margin: 20px 20px;
+  border-radius: 50%;
+
+}
+
+.cover .card span{
+  font-size: 10px;
+  color: #7f8c8d;
+}
+
+.cover .card .value{
+  font-size:14px;
+}
+
+.update{
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  margin:10px 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.update .profileMenu{
+  display: flex;
+  margin: 10px 10px;
+}
+
+.update .value input {
+    width: 95%;
+    font-size: 14px;
+}
+
+
+
+}

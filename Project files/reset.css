@@ -1,0 +1,60 @@
+
+    html{
+        background: url(img/book.jpg) no-repeat center fixed;
+        background-size: cover;
+    }
+      .wrap{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+      }
+
+      .con{
+        position: relative;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+        border-radius: 5px;
+        width: 400px;
+        box-sizing: border-box;
+        padding: 10px;
+        background: #fff;
+        display:block;
+      }
+
+      .heading{
+          text-align: center;
+          margin: 15px auto;
+      }
+
+      .text{
+        margin: 15px auto;
+      }
+
+      .inputEmail input{
+        margin: 10px auto;
+        width: 80%;
+        padding: 5px;
+        font-size: 16px;
+        border-style: solid;
+        border: 1px solid #111;
+        border-radius: 5px;
+      }
+      input[type=submit]{
+        margin: 8px auto 15px;
+        padding: 5px 10px;
+        color: #fff;
+        background: #009ee0;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+
+      .err{
+          color: #c80000;
+          font-size: 14px;
+          position: relative;
+          top: 2px;
+          opacity: 0;
+          }

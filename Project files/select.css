@@ -1,0 +1,118 @@
+body{
+font-family: "Montserrat", sans-serif;
+text-align: center;
+}
+
+.wrap{
+  width: 100%;
+}
+
+.main,.sem{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sem {
+  margin-top: 20px;
+}
+
+input[type=radio]{
+  display: none;
+}
+
+.main label{
+  width: 250px;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  border-radius: 10px;
+  position: relative;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  border:none;
+  color: #fff;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.sem label{
+  width: 60px;
+  background: #f1f2f6;
+  padding: 10px 13px;
+  margin : 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.itlabel{
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/branch/information-technology.jpg);
+  background-size: cover;
+}
+
+
+.cslabel{
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/branch/computer-engineering.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Eleclabel{
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/branch/electrical-engineering.jpg);
+  background-size: cover;
+}
+.Electrolabel{
+  background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(img/branch/electronics-engineer.jpg);
+  background-size: cover;
+}
+.EnadTlabel{
+  background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(img/branch/Electronics-and-Telecommunication-Engineering.jpg);
+  background-size: cover;
+}
+
+img{
+  width: 250px;
+  height: 150px;
+}
+
+.next{
+  outline:none;
+  border:none;
+  background: #009ee0;
+  border-radius: 20px;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.main label span{
+  position: absolute;
+  top: -2px;
+  right: 0px;
+  font-size: 35px;
+  opacity: 0;
+}
+.sem label span{
+  position: absolute;
+  top: -8px;
+  right: -3px;
+  font-size: 20px;
+  opacity: 0;
+}
+
+h1:nth-of-type(2){
+  margin: 40px 0 0 0;
+  display: inline-block;
+}
+
+.errorB,.errorS{
+  color: red;
+  margin-top: 20px;
+  opacity: 0;
+}
