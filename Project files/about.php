@@ -71,9 +71,7 @@ $("#side-menu").css({width:"0"});
     <div class="member">
             <img src="img/team1.png" alt="">
         <div class="details">
-            <p>ADITYA RAUT</p>
-            <p>TEINFT-2</p>
-            <p>11</p>
+            <p>John Doe</p>
         </div>
         <div class="con">
             <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -85,9 +83,7 @@ $("#side-menu").css({width:"0"});
     <div class="member">
         <span class="avatar"><img src="img/team2.png" alt=""></span>
             <div class="details">
-                    <p>GAJENDRA RAUT</p>
-                    <p>TEINFT-2</p>
-                    <p>12</p>
+                    <p>John Doe</p>
             </div>
             <div class="con">
                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -99,9 +95,7 @@ $("#side-menu").css({width:"0"});
     <div class="member">
         <span class="avatar"><img src="img/team3.png" alt=""></span>
         <div class="details">
-                <p>SASHWATA BHATTACHARYA</p>
-                <p>TEINFT-2</p>
-                <p>16</p>
+                <p>John Doe</p>
             </div>
             <div class="con">
                     <a href=""><i class="fab fa-facebook-f"></i></a>
