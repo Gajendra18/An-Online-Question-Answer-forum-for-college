@@ -31,18 +31,16 @@ Go to : http://localhost/edify
 
 ## Screenshots
 
-![Landing Page](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Landing Page](images/screencapture-localhost-Project-index-php-2022-10-12-23_01_57.png)
 
-![Login](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Login](images/screencapture-localhost-Project-login-php-2022-10-12-23_04_14.png)
 
-![Sign](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Register](images/screencapture-localhost-Project-select-php-2022-10-12-23_05_37.png)
 
-![Reset Password](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Reset Password](images/screencapture-localhost-Project-forgotPassword-php-2022-10-12-23_09_04.png)
 
-![User Home Page](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![User Home Page](images/UserHome.png)
 
-![Post a question](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Post a question](images/Post.png)
 
-![Post Page](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-![Notifications](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Post Page](images/screencapture-localhost-Project-question-php-2022-10-12-23_08_05.png)
